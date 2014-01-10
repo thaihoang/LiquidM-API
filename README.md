@@ -1,7 +1,7 @@
 madvertise-api
 ==============
 
-h1. madvertise API
+
 
 Madvertise offers a HTTP based API to publishers. We offer two different types of API-access. Please have a closer look at section "Ad request" to find out which is the best solution for your needs.
 
