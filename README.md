@@ -1,9 +1,9 @@
-madvertise-api
+LiquidM-api
 ==============
 
 
 
-Madvertise offers a HTTP based API to publishers. We offer two different types of API-access. Please have a closer look at section "Ad request" to find out which is the best solution for your needs.
+LiquidM offers a HTTP based API to publishers. We offer two different types of API-access. Please have a closer look at section "Ad request" to find out which is the best solution for your needs.
 
 h2. Ad request
 
@@ -51,10 +51,10 @@ Parameter name |Possible value |Mandatory |Description |Example
 ---------------|:-----------:|:-----------:|:----------:|:-------
 ua |valid string |yes |User agent string of the requestinyesg device |Mozilla/5.0 (iPod touch; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H1
 ip |valid ipv4 address |yes |IP of the requesting device |210.12.13.13
-requester |valid string |yes |string which identifies the requesting entity, please use the example-value |madvertise_api
+requester |valid string |yes |string which identifies the requesting entity, please use the example-value |LiquidM_api
 version |valid string |yes |string which gives information about the version of the requesting entity, please use the example-value |api_2.1
 hh_{.*} |valid string |yes |HTTP headers sent by the requesting device. The original name should be prefixed with hh_, all chars should be downcase. |hh_http_x_forwarded_for=147.13.13.4
-madvertise_cookie |valid string |yes |The “madvertise” cookie which was passed by the requesting device. If the device doesn’t support cookies, send nothing. |UU-34m16x3
+LiquidM_cookie |valid string |yes |The “LiquidM” cookie which was passed by the requesting device. If the device doesn’t support cookies, send nothing. |UU-34m16x3
 channels |one of the following: blind, community, games, portals, sports, movie_and_entertainment, music, automotive, travel, business_and_finance,lifestyle, technology_and_computer, erotic_content |no |one or more strings, seperated by ','. Use blind in the sense of all |games,sports,music
 banner_type |mma, medium_rectangle, leaderboard, rich_media |no |You may request several kinds of banner_types. The given order equals a prioritization. You will not get more than one banner, but you may define fallback types if the first type is not available. Banner sizes are: mma = 300x50 (or 320x53, depending on the phone), medium_rectangle = 300x250, leaderboard = 728x90, rich_media = Full Screen, Every banner type is available as MRAID. rich media should always use mraid=true
 unique_session_id |valid string |no |An id which is unique for the current users session. i.E: SHA1 |234a23e
@@ -80,7 +80,7 @@ income |single natural number (in Euro) or range |no |Income of the device user 
 incentivized |boolean |no |Is the app/mobile website user rewarded for a click/download of the advertised product or brand? |1
 site_url |valid URL |no |The url of the requesting site. This is only useful for ad proxies. |http://admachines.mobi/stats
 keywords |valid String |no |Keywords which are associated with the requesting site. |gaming
-debug |boolean |no |If set to true enables debugging. In every response an additional header ist delivered. It contains information about the reason of a specific response. e.g.: X-Madvertise-Debug: Everything OK., X-Madvertise-Debug: User agent is unknown. |true
+debug |boolean |no |If set to true enables debugging. In every response an additional header ist delivered. It contains information about the reason of a specific response. e.g.: X-LiquidM-Debug: Everything OK., X-LiquidM-Debug: User agent is unknown. |true
 must_have_banner |boolean |no |Filtering: ensure the returned ad has a banner/image |false
 must_have_text |boolean |no |Filtering: ensure the returned ad has a text |false
 deliver_only_text |boolean |no |Filtering: ensures the returned ad has a text + does no deliver the banner even if existing |false
