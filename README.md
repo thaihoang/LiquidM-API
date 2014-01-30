@@ -1,4 +1,4 @@
-LiquidM-API
+LiquidM API
 ==============
 
 
